@@ -27,6 +27,8 @@ sudo pacman -Sy core/make core/clang
 ### Once task
 
 ```raw
+git submodule init
+git submodule update
 mkdir build
 cd build
 cmake ..
