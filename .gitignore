@@ -9,6 +9,11 @@
 !.dockerignore
 !toolbox.sh
 
+# Add .vscode directory
+!.vscode
+!.vscode/**
+!.vscode/**/*
+
 # Add libs directory
 !libs
 !libs/**
