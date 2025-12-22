@@ -9,6 +9,18 @@ project(myApp
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# ------------------ Platform detection ----------------------------------------
+message(STATUS "Detecting platform...")
+if(WIN32)
+    message(STATUS "Platform: Windows")
+elseif(APPLE)
+    message(STATUS "Platform: macOS, iOS, tvOS, visionOS or watchOS")
+elseif(UNIX AND NOT APPLE)
+    message(STATUS "Platform: Linux")
+else()
+    message(STATUS "Platform: Unknown")
+endif()
+
 # Add subdirectories (libs and app)
 add_subdirectory(libs)
 add_subdirectory(app)
