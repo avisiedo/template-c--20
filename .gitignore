@@ -1,7 +1,7 @@
 # Ignore by default
 **/*
 
-# Add Base files
+# Add Root files
 !LICENSE
 !README.md
 !CMakeLists.txt
