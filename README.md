@@ -11,7 +11,12 @@
 
 **Fedora**
 
-TODO
+```sh
+# General
+sudo dnf install -y cmake clang gmock-devel gtest-devel
+# If using boost
+sudo dnf install -y boost-devel
+```
 
 **Ubuntu**
 
@@ -23,10 +28,11 @@ TODO
 sudo pacman -Sy core/make core/clang
 ```
 
-
 ### Once task
 
 ```raw
+git submodule init
+git submodule update
 mkdir build
 cd build
 cmake ..
@@ -34,6 +40,13 @@ make
 ```
 
 Day to day rules:
+
+```raw
+mkdir build; cd build
+cmake ..
+cmake --build .
+cmake --build . --fresh
+```
 
 TODO
 

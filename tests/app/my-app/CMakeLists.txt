@@ -1,13 +1,16 @@
 
-add_executable(
-    my_app_main_test
+find_package(GTest REQUIRED)
+
+
+add_executable(my_app_main_test
     main_test.cpp
 )
-target_link_libraries(
-    my_app_main_test
-    gtest
-    gtest_main
-    # GTest::gtest_main
+
+
+target_link_libraries(my_app_main_test
+    PRIVATE
+        GTest::GTest
+        GTest::Main
 )
 
 include(GoogleTest)

@@ -1,13 +1,23 @@
 # Ignore by default
 **/*
 
-# Add Base files
+# Add Root files
 !LICENSE
 !README.md
 !CMakeLists.txt
 !.gitignore
 !.dockerignore
 !toolbox.sh
+
+# Add .vscode directory
+!.vscode
+!.vscode/**
+!.vscode/**/*
+
+# Add cmake directory
+!cmake
+!cmake/**
+!cmake/**/*
 
 # Add libs directory
 !libs
