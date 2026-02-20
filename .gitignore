@@ -11,46 +11,37 @@
 
 # Add .vscode directory
 !.vscode
-!.vscode/**
 !.vscode/**/*
 
 # Add cmake directory
 !cmake
-!cmake/**
 !cmake/**/*
 
 # Add libs directory
 !libs
-!libs/**
 !libs/**/*
 
 # Add app directory
 !app
-!app/**
 !app/**/*
 
 # Add tests directory
 !tests
-!tests/**
 !tests/**/*
 
 # Add cmake tools
 !cmake
-!cmake/**
 !cmake/**/*
 
 # Add .github
 !.github
-!.github/**
 !.github/**/*
 
 # Add docs directory
 !docs
-!docs/**
 !docs/**/*
 
 # Third party submodules
 !third_party
-!third_party/**
 !third_party/**/*
 
