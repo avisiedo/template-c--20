@@ -42,7 +42,7 @@ target_compile_options(my-app PRIVATE
 )
 
 target_compile_options(my-app PRIVATE
-    $<$<AND:$<CONFIG:Release>,$<OR:$<CXX_COMPILE_ID:GNU>,$<CXX_COMPILE_ID:Clang>>>:-O3>
+    $<$<AND:$<CONFIG:Release>,$<OR:$<CXX_COMPILER_ID:GNU>,$<CXX_COMPILER_ID:Clang>>>:-O3>
     $<$<AND:$<CONFIG:Release>,$<CXX_COMPILER_ID:MSVC>>:/O2>
 )
 
